@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link, Button } from "@heroui/react";
-import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -82,7 +81,7 @@ const Navbar = () => {
   return (
     <nav id="home" className="mt-5 mb-7 sticky top-0 z-40 w-full">
       <header className="max-w-7xl mx-auto px-5">
-        <section id="home" className="flex items-center justify-between">
+        <section className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Button
               className="lg:hidden bg-transparent h-auto"
@@ -131,16 +130,12 @@ const Navbar = () => {
             />
           </div>
 
-          <ul className="hidden items-center lg:flex px-1 py-1 bg-white/5 backdrop-blur-md border border-white/10 rounded-full shadow-2xl">
+          <ul className="hidden items-center lg:flex px-1 py-1 glass-1 rounded-full">
             {navLinks}
           </ul>
 
           <div>
-            <Button
-              className={
-                "px-5 h-10 text-base  font-secondary bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl"
-              }
-            >
+            <Button className={"px-5 h-10 text-base  font-secondary glass-1"}>
               <span className="text-gradient">Resume</span>
             </Button>
           </div>

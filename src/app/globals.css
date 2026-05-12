@@ -33,3 +33,16 @@ a {
   background-clip: text;
   color: transparent;
 }
+
+/* bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl */
+
+.glass-1 {
+  background-color: rgba(255, 255, 255, 0.05); /* bg-white/5 */
+
+  backdrop-filter: blur(12px); /* backdrop-blur-md */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+
+  border: 1px solid rgba(255, 255, 255, 0.1); /* border-white/10 */
+
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+}
