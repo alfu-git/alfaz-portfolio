@@ -1,2 +1,35 @@
 @import "tailwindcss";
-@import "@heroui/styles"; 
+@import "@heroui/styles";
+
+a {
+  text-decoration: none;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-space-grotesk);
+    color: #a5adba;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-orbitron);
+  }
+}
+
+@layer utilities {
+  .font-secondary {
+    font-family: var(--font-orbitron);
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
