@@ -1,5 +1,6 @@
 import React from "react";
 import SkillsProgressBar from "./SkillsProgressBar";
+import SkillsMarquee from "./SkillsMarquee";
 
 const Skills = () => {
   return (
@@ -12,6 +13,10 @@ const Skills = () => {
 
           <div>
             <SkillsProgressBar />
+          </div>
+
+          <div>
+            <SkillsMarquee />
           </div>
         </div>
       </div>

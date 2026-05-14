@@ -5,19 +5,23 @@ const ScrollProgressBar = () => {
   const barRef = useRef(null);
   const glowRef = useRef(null);
   const progressRef = useRef(0);
-  let ticking = false;
+  const ticking = useRef(false);
 
   useEffect(() => {
     const updateScroll = () => {
-      const totalHeight =
+      const totalHeight = Math.max(
         document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
+          document.documentElement.clientHeight,
+        1,
+      );
 
       const scrollTop = document.documentElement.scrollTop;
 
       progressRef.current = (scrollTop / totalHeight) * 100;
 
-      if (!ticking) {
+      if (!ticking.current) {
+        ticking.current = true;
+
         window.requestAnimationFrame(() => {
           const progress = progressRef.current / 100;
 
@@ -30,7 +34,7 @@ const ScrollProgressBar = () => {
             glowRef.current.style.opacity = progress > 0 ? 1 : 0;
           }
 
-          ticking = false;
+          ticking.current = false;
         });
       }
     };
@@ -61,6 +65,7 @@ const ScrollProgressBar = () => {
           transform: "scaleX(0)",
           background: "linear-gradient(90deg, #6366f1, #a855f7, #ec4899)",
           boxShadow: "0 0 1px rgba(168, 85, 247, 0.6)",
+          willChange: "transform",
           transition: "transform 0.15s ease-out",
         }}
       />
