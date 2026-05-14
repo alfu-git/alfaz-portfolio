@@ -55,7 +55,7 @@ const Banner = () => {
                   </h1>
 
                   <p className="sm:mt-3 text-xl sm:text-2xl text-[#00D4FF] font-medium">
-                    An Passionate MERN-Stack
+                    An Passionate MERN-Stack Developer
                   </p>
                 </div>
 
