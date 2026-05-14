@@ -8,8 +8,6 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -19,10 +17,12 @@ const Navbar = () => {
         });
       },
       {
-        threshold: 0.6,
+        rootMargin: "-40% 0px -55% 0px", // ← triggers when section crosses the middle band
+        threshold: 0,                     // ← fires as soon as even 1px enters the band
       },
     );
 
+    const sections = document.querySelectorAll("section[id]"); // ← only sections WITH an id
     sections.forEach((section) => observer.observe(section));
 
     return () => observer.disconnect();
@@ -79,7 +79,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav id="home" className="mt-5 mb-7 sticky top-0 z-40 w-full">
+    <nav className="pt-5 sticky top-0 z-40 w-full">
       <header className="max-w-7xl mx-auto px-5">
         <section className="flex items-center justify-between">
           <div className="flex items-center gap-2">

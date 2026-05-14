@@ -19,6 +19,10 @@ a {
   h6 {
     font-family: var(--font-orbitron);
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer utilities {
