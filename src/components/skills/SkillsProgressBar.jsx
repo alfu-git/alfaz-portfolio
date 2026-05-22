@@ -30,7 +30,7 @@ const SkillsProgressBar = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: `90%` }}
                 transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 className="h-full bg-linear-to-r from-[#6366F1] via-[#A855F7] to-[#EC4899]"
               />
             </div>
@@ -47,7 +47,7 @@ const SkillsProgressBar = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: `80%` }}
                 transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 className="h-full bg-linear-to-r from-[#6366F1] via-[#A855F7] to-[#EC4899]"
               />
             </div>
@@ -64,7 +64,7 @@ const SkillsProgressBar = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: `85%` }}
                 transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 className="h-full bg-linear-to-r from-[#6366F1] via-[#A855F7] to-[#EC4899]"
               />
             </div>
@@ -94,7 +94,7 @@ const SkillsProgressBar = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: `65%` }}
                 transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 className="h-full bg-linear-to-r from-[#6366F1] via-[#A855F7] to-[#EC4899]"
               />
             </div>
@@ -111,7 +111,7 @@ const SkillsProgressBar = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: `78%` }}
                 transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 className="h-full bg-linear-to-r from-[#6366F1] via-[#A855F7] to-[#EC4899]"
               />
             </div>
@@ -141,7 +141,7 @@ const SkillsProgressBar = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: `95%` }}
                 transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 className="h-full bg-linear-to-r from-[#6366F1] via-[#A855F7] to-[#EC4899]"
               />
             </div>
@@ -158,7 +158,7 @@ const SkillsProgressBar = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: `80%` }}
                 transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 className="h-full bg-linear-to-r from-[#6366F1] via-[#A855F7] to-[#EC4899]"
               />
             </div>
@@ -175,7 +175,7 @@ const SkillsProgressBar = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: `60%` }}
                 transition={{ duration: 2 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 className="h-full bg-linear-to-r from-[#6366F1] via-[#A855F7] to-[#EC4899]"
               />
             </div>

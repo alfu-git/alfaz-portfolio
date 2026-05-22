@@ -19,10 +19,10 @@ const float = (duration = 3) => ({
 export default function AboutLeft() {
   return (
     <div className="relative flex justify-center items-center w-full">
-      {/* 🌈 Glow Background */}
+      {/* glow bg */}
       <div className="absolute w-56 h-56 sm:w-72 sm:h-72 rounded-full bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 blur-3xl opacity-30 animate-pulse" />
 
-      {/* ⚡ Floating Icons */}
+      {/* floating icons */}
       <motion.div
         {...float(3)}
         className="absolute -top-3 left-2 md:top-0 md:left-20 lg:-top-1 lg:left-5 text-cyan-400 text-3xl"
