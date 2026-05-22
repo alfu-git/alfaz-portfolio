@@ -28,7 +28,7 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="my-30 max-w-7xl w-full mx-auto px-5"
+      className="mb-40 max-w-7xl w-full mx-auto px-5"
       variants={container}
       initial="hidden"
       whileInView="show"

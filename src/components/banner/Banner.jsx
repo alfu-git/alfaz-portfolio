@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
-    <section id="home" className="pt-12 pb-10 mb-10">
+    <section id="home" className="pt-12 mb-40">
       <div className="max-w-7xl w-full mx-auto px-5">
         <div className="flex flex-col-reverse gap-y-15 lg:flex-row lg:justify-between lg:items-center">
           {/* LEFT TEXT */}
