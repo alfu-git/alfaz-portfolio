@@ -18,7 +18,7 @@ const Navbar = () => {
       },
       {
         rootMargin: "-40% 0px -55% 0px", // ← triggers when section crosses the middle band
-        threshold: 0,                     // ← fires as soon as even 1px enters the band
+        threshold: 0, // ← fires as soon as even 1px enters the band
       },
     );
 
@@ -59,14 +59,14 @@ const Navbar = () => {
       </li>
 
       <li>
-        <Link href="#qualifications" className={activeLink("qualifications")}>
-          Qualifications
+        <Link href="#projects" className={activeLink("projects")}>
+          Projects
         </Link>
       </li>
 
       <li>
-        <Link href="#project" className={activeLink("project")}>
-          Project
+        <Link href="#qualifications" className={activeLink("qualifications")}>
+          Qualifications
         </Link>
       </li>
 

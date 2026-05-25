@@ -9,7 +9,7 @@ import Link from "next/link";
 import { FaGraduationCap } from "react-icons/fa6";
 
 const container = {
-  hidden: { opacity: 0, y: 80, scale: 0.96, filter: "blur(10px)" },
+  hidden: { opacity: 0, y: 30, scale: 0.96, filter: "blur(10px)" },
   show: {
     opacity: 1,
     y: 0,
@@ -32,11 +32,12 @@ const Qualifications = () => {
   return (
     <motion.section
       id="qualifications"
-      className="mb-40 max-w-7xl w-full mx-auto px-5"
+      className="my-20 max-w-7xl w-full mx-auto px-5"
       variants={container}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.4 }}
+      viewport={{ once: false, amount: 0.25 }}
+      suppressHydrationWarning
     >
       <motion.h2
         variants={item}
@@ -52,8 +53,7 @@ const Qualifications = () => {
         {/* secondary */}
         <div className="group flex flex-col items-center gap-y-15 w-full h-full">
           <span
-            className="relative p-3 glass-1 rounded-2xl text-3xl transition-all duration-500 group-hover:text-white group-hover:shadow-[0_0_40px_15px_rgba(255,255,255,0.25),0_0_80px_25px_rgba(255,255,255,0.15)] before:absolute before:inset-0 before:rounded-2xl before:bg-white/20 before:blur-xl before:opacity-0 before:transition-all before:duration-500
-            group-hover:before:opacity-100"
+            className="relative p-3 glass-1 rounded-2xl text-3xl transition-all duration-500 group-hover:text-white group-hover:shadow-[0_0_40px_15px_rgba(255,255,255,0.25),0_0_80px_25px_rgba(255,255,255,0.15)] before:absolute before:inset-0 before:rounded-2xl before:bg-white/20 before:blur-xl before:opacity-0 before:transition-all before:duration-500 group-hover:before:opacity-100"
           >
             <MdBackpack />
           </span>
@@ -89,8 +89,7 @@ const Qualifications = () => {
         {/* intermediate */}
         <div className="group flex flex-col items-center gap-y-15 w-full h-full">
           <span
-            className="relative p-3 glass-1 rounded-2xl text-3xl transition-all duration-500 group-hover:text-white group-hover:shadow-[0_0_40px_15px_rgba(255,255,255,0.25),0_0_80px_25px_rgba(255,255,255,0.15)] before:absolute before:inset-0 before:rounded-2xl before:bg-white/20 before:blur-xl before:opacity-0 before:transition-all before:duration-500
-            group-hover:before:opacity-100"
+            className={"relative p-3 glass-1 rounded-2xl text-3xl transition-all duration-500 group-hover:text-white group-hover:shadow-[0_0_40px_15px_rgba(255,255,255,0.25),0_0_80px_25px_rgba(255,255,255,0.15)] before:absolute before:inset-0 before:rounded-2xl before:bg-white/20 before:blur-xl before:opacity-0 before:transition-all before:duration-500 group-hover:before:opacity-100"}
           >
             <LuSchool />
           </span>
@@ -132,7 +131,7 @@ const Qualifications = () => {
             <FaGraduationCap />
           </span>
 
-          <div className="p-8 bg-linear-to-br from-[#00d4ff]/3 via-[#00d4ff]/2 to-[#00d4ff]/1 backdrop-blur-sm rounded-4xl flex flex-col h-full transition-all duration-500 ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:-translate-y-3 hover:shadow-[0_25px_60px_-10px_rgba(0,212,255,0.25)]">
+          <div className={"p-8 bg-linear-to-br from-[#00d4ff]/3 via-[#00d4ff]/2 to-[#00d4ff]/1 backdrop-blur-sm rounded-4xl flex flex-col h-full transition-all duration-500 ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:-translate-y-3 hover:shadow-[0_25px_60px_-10px_rgba(0,212,255,0.25)]"}>
             <p className="flex justify-between items-center">
               <span className="text-[#00d4ff] font-medium">HONORS</span>
 

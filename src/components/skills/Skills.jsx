@@ -32,12 +32,12 @@ const itemVariant = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="mb-40 max-w-7xl w-full mx-auto px-5">
+    <section id="skills" className="my-20 max-w-7xl w-full mx-auto px-5">
       {/* heading + animated skills */}
       <motion.div
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.4 }}
+        viewport={{ once: false, amount:  0.25 }}
         transition={{ duration: 0.8 }}
       >
         <h2 className="mb-15 sm:mb-10 text-5xl text-gradient font-bold text-center">
@@ -49,7 +49,7 @@ const Skills = () => {
 
       {/* marquee + progress bar */}
       <motion.div
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.4 }}
         transition={{ duration: 0.8, delay: 0.1 }}

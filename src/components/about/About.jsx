@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import AboutLeft from "./AboutLeft";
 
 const container = {
-  hidden: { opacity: 0, y: 80, scale: 0.96, filter: "blur(10px)" },
+  hidden: { opacity: 0, y: 30, scale: 0.96, filter: "blur(10px)" },
   show: {
     opacity: 1,
     y: 0,
@@ -20,7 +20,7 @@ const container = {
 };
 
 const item = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 30 },
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
@@ -28,11 +28,11 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="mb-40 max-w-7xl w-full mx-auto px-5"
+      className="my-20 max-w-7xl w-full mx-auto px-5"
       variants={container}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.4 }} // 👈 40% trigger (your requirement)
+      viewport={{ once: false, amount: 0.25 }}
     >
       <motion.h2
         variants={item}
