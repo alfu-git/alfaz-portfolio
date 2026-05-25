@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@heroui/react";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 const container = {
   hidden: { opacity: 0, y: 10, scale: 0.96, filter: "blur(10px)" },
@@ -53,7 +54,7 @@ const ProjectSecContent = ({ projects }) => {
               key={index}
               className="grid grid-cols lg:grid-rows gap-y-5 lg:grid-cols-7 items-center"
             >
-              {/* 🔥 LEFT CARD (ALWAYS LEFT ANIMATION) */}
+              {/* left card */}
               <motion.div
                 initial={{ opacity: 0, x: -80, filter: "blur(8px)" }}
                 whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
@@ -73,7 +74,7 @@ const ProjectSecContent = ({ projects }) => {
                 />
               </motion.div>
 
-              {/* 🔥 CENTER SCROLLBAR */}
+              {/* center scroll bar */}
               <div className="hidden lg:block col-span-1">
                 <div className="hidden lg:block absolute left-1/2 top-0 -translate-x-1/2 h-full w-1 bg-white/10">
                   <motion.div
@@ -83,7 +84,7 @@ const ProjectSecContent = ({ projects }) => {
                 </div>
               </div>
 
-              {/* 🔥 RIGHT CARD (ALWAYS RIGHT ANIMATION) */}
+              {/* right card */}
               <motion.div
                 initial={{ opacity: 0, x: 80, filter: "blur(8px)" }}
                 whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
@@ -95,11 +96,11 @@ const ProjectSecContent = ({ projects }) => {
                 className="lg:col-span-3 p-5 bg-white/5 backdrop-blur-3xl border border-white/10 shadow-3xl rounded-2xl h-full"
               >
                 <h3 className="text-3xl font-bold text-white mb-4">
-                  {project.name}
+                  {project?.name}
                 </h3>
 
                 <p className="leading-relaxed line-clamp-2 text-base">
-                  {project.description}
+                  {project?.description}
                 </p>
 
                 <div className="mt-5 flex flex-wrap gap-3">
@@ -123,9 +124,11 @@ const ProjectSecContent = ({ projects }) => {
                 </div>
 
                 <div className="mt-8 flex justify-end">
-                  <Button className="h-auto px-6 py-2 bg-[#00d4ff]/10 border border-[#00d4ff] text-[#00d4ff] text-md">
-                    View More <ArrowUpRight size={18} />
-                  </Button>
+                  <Link href={`/project-details/${project?.name}`}>
+                    <Button className="h-auto px-6 py-2 bg-[#00d4ff]/10 border border-[#00d4ff] text-[#00d4ff] text-md">
+                      View More <ArrowUpRight size={18} />
+                    </Button>
+                  </Link>
                 </div>
               </motion.div>
             </div>

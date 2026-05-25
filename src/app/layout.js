@@ -2,6 +2,7 @@ import { Orbitron, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import ParticlesWrapper from "@/components/particlesBg/ParticlesWrapper";
 import ScrollProgressBar from "@/components/shared/ScrollProgressBar";
+import Navbar from "@/components/navbar/Navbar";
 
 const orbitron = Orbitron({
   variable: "--font-orbitron",
@@ -30,7 +31,8 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col bg-[#050A12]">
         <ParticlesWrapper />
         <ScrollProgressBar />
-        {children}
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );

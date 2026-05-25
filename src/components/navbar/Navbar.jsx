@@ -114,7 +114,7 @@ const Navbar = () => {
             </Button>
 
             <div
-              className="w-15 h-15"
+              className="w-10 h-10"
               style={{
                 background:
                   "linear-gradient(to right, #6366f1, #a855f7, #ec4899)",
