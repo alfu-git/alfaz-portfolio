@@ -52,7 +52,7 @@ const FloatingSkill = ({ skill, i }) => {
         alt={skill.name}
         width={40}
         height={40}
-        className="w-7 md:w-8 h-7 md:h-8"
+        className="w-5 h-5 md:w-8 md:h-8"
       />
     </motion.div>
   );

@@ -48,17 +48,15 @@ const Qualifications = () => {
 
       <motion.div
         variants={item}
-        className="px-8 py-10 rounded-2xl glass-1 grid grid-cols-1 lg:grid-cols-3 gap-7"
+        className="p-1 sm:px-8 py-10 rounded-2xl glass-1 grid grid-cols-1 lg:grid-cols-3 gap-y-15 gap-x-7"
       >
         {/* secondary */}
-        <div className="group flex flex-col items-center gap-y-15 w-full h-full">
-          <span
-            className="relative p-3 glass-1 rounded-2xl text-3xl transition-all duration-500 group-hover:text-white group-hover:shadow-[0_0_40px_15px_rgba(255,255,255,0.25),0_0_80px_25px_rgba(255,255,255,0.15)] before:absolute before:inset-0 before:rounded-2xl before:bg-white/20 before:blur-xl before:opacity-0 before:transition-all before:duration-500 group-hover:before:opacity-100"
-          >
+        <div className="group flex flex-col items-center gap-y-8 sm:gap-y-15 w-full h-full">
+          <span className="relative p-3 glass-1 rounded-2xl text-3xl transition-all duration-500 group-hover:text-white group-hover:shadow-[0_0_40px_15px_rgba(255,255,255,0.25),0_0_80px_25px_rgba(255,255,255,0.15)] before:absolute before:inset-0 before:rounded-2xl before:bg-white/20 before:blur-xl before:opacity-0 before:transition-all before:duration-500 group-hover:before:opacity-100">
             <MdBackpack />
           </span>
 
-          <div className="p-8 bg-white/5 border border-white/10 shadow-2xl rounded-4xl flex flex-col h-full transition-all duration-500 ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:-translate-y-3 hover:shadow-[0_25px_60px_-10px_rgba(0,212,255,0.25)]">
+          <div className="w-full p-1 sm:p-8 bg-white/5 border border-white/10 shadow-2xl rounded-lg sm:rounded-4xl flex flex-col h-full transition-all duration-500 ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:-translate-y-3 hover:shadow-[0_25px_60px_-10px_rgba(0,212,255,0.25)]">
             <span className="text-[#00d4ff] font-medium">SECONDARY</span>
 
             <Link href={"https://belfuliaschool.edu.bd"} target="_blank">
@@ -87,14 +85,16 @@ const Qualifications = () => {
         </div>
 
         {/* intermediate */}
-        <div className="group flex flex-col items-center gap-y-15 w-full h-full">
+        <div className="group flex flex-col items-center gap-y-8 sm:gap-y-15 w-full h-full">
           <span
-            className={"relative p-3 glass-1 rounded-2xl text-3xl transition-all duration-500 group-hover:text-white group-hover:shadow-[0_0_40px_15px_rgba(255,255,255,0.25),0_0_80px_25px_rgba(255,255,255,0.15)] before:absolute before:inset-0 before:rounded-2xl before:bg-white/20 before:blur-xl before:opacity-0 before:transition-all before:duration-500 group-hover:before:opacity-100"}
+            className={
+              "relative p-3 glass-1 rounded-2xl text-3xl transition-all duration-500 group-hover:text-white group-hover:shadow-[0_0_40px_15px_rgba(255,255,255,0.25),0_0_80px_25px_rgba(255,255,255,0.15)] before:absolute before:inset-0 before:rounded-2xl before:bg-white/20 before:blur-xl before:opacity-0 before:transition-all before:duration-500 group-hover:before:opacity-100"
+            }
           >
             <LuSchool />
           </span>
 
-          <div className="p-8 bg-white/5 border border-white/10 shadow-2xl rounded-4xl flex flex-col h-full transition-all duration-500 ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:-translate-y-3 hover:shadow-[0_25px_60px_-10px_rgba(0,212,255,0.25)]">
+          <div className="w-full p-1 sm:p-8 bg-white/5 border border-white/10 shadow-2xl rounded-lg sm:rounded-4xl flex flex-col h-full transition-all duration-500 ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:-translate-y-3 hover:shadow-[0_25px_60px_-10px_rgba(0,212,255,0.25)]">
             <span className="text-[#00d4ff] font-medium">INTERMEDIATE</span>
 
             <Link href={"https://rgckhulna.edu.bd"} target="_blank">
@@ -123,7 +123,7 @@ const Qualifications = () => {
         </div>
 
         {/* honours */}
-        <div className="group flex flex-col items-center gap-y-15 w-full h-full">
+        <div className="group flex flex-col items-center gap-y-8 sm:gap-y-15 w-full h-full">
           <span
             className="relative p-3 glass-1 rounded-2xl text-3xl transition-all duration-500 group-hover:text-white group-hover:shadow-[0_0_40px_15px_rgba(255,255,255,0.25),0_0_80px_25px_rgba(255,255,255,0.15)] before:absolute before:inset-0 before:rounded-2xl before:bg-white/20 before:blur-xl before:opacity-0 before:transition-all before:duration-500
             group-hover:before:opacity-100"
@@ -131,7 +131,11 @@ const Qualifications = () => {
             <FaGraduationCap />
           </span>
 
-          <div className={"p-8 bg-linear-to-br from-[#00d4ff]/3 via-[#00d4ff]/2 to-[#00d4ff]/1 backdrop-blur-sm rounded-4xl flex flex-col h-full transition-all duration-500 ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:-translate-y-3 hover:shadow-[0_25px_60px_-10px_rgba(0,212,255,0.25)]"}>
+          <div
+            className={
+              "w-full p-1 sm:p-8 bg-linear-to-br from-[#00d4ff]/3 via-[#00d4ff]/2 to-[#00d4ff]/1 backdrop-blur-sm rounded-lg sm:rounded-4xl flex flex-col h-full transition-all duration-500 ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:-translate-y-3 hover:shadow-[0_25px_60px_-10px_rgba(0,212,255,0.25)]"
+            }
+          >
             <p className="flex justify-between items-center">
               <span className="text-[#00d4ff] font-medium">HONORS</span>
 
